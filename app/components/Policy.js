@@ -1,5 +1,4 @@
 var React = require('react');
-var MainContainer = require('../containers/MainContainer');
 
 var Polling = React.createClass({
 	render: function () {

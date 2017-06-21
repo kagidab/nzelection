@@ -1,5 +1,4 @@
 var React = require('react');
-var MainContainer = require('../containers/MainContainer');
 var PartyInstance = require('./PartyInstance');
 var Link = require('react-router-dom').Link;
 

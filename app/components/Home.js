@@ -1,6 +1,5 @@
 var React = require('react');
 var ReactRouter = require('react-router-dom');
-var MainContainer = require('../containers/MainContainer');
 var Link = ReactRouter.Link;
 var D3Time = require('d3-time');
 

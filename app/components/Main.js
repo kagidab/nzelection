@@ -12,8 +12,6 @@ var styles = require('../styles/');
 var Home = require('./Home');
 var Infosheet = require('./Infosheet');
 
-var MainContainer = require('../containers/MainContainer');
-
 var Router = ReactRouterDom.BrowserRouter
 var Route = ReactRouterDom.Route
 var Switch = ReactRouterDom.Switch
