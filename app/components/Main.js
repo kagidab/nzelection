@@ -12,7 +12,7 @@ var styles = require('../styles/');
 var Home = require('./Home');
 var Infosheet = require('./Infosheet');
 
-var Router = ReactRouterDom.BrowserRouter
+var Router = ReactRouterDom.HashRouter
 var Route = ReactRouterDom.Route
 var Switch = ReactRouterDom.Switch
 var Match = ReactRouter.Match

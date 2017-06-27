@@ -1,43 +1,52 @@
-React = require('react');
-
-var partyInfo =
-	[
-		{key:'greens', name:'Greens', currentMP: 14,
-			leader:'Metiria Turei/James Shaw', 
-			twitter:"nzgreens"
-		},
-		{key:'national', name:'National',
-			twitter:"nznationalparty"
-		},
-		{key:'labour', name:'Labour', currentMP: 31,
-				website:"http://www.labour.org.nz/",
-				twitter:"nzlabour"}
-	];
+var React = require('react');
+var partyFile = require('../data/parties.json');
+var Link = require('react-router-dom').Link;
 
 class Infosheet extends React.Component {
 
 	render(){
 		var partyName = this.props.match.params.partyName;
+		var partyInfo = partyFile[partyName];
 		return (
 			<div>
-				{Object.keys(partyInfo).filter(function(key){
-					return partyInfo[key].key === partyName; 
-				}).map(function(key){
-				return(
-				<div key={key}>
+				<div>
 					<h1>
-						{partyInfo[key].name}
+						{partyInfo.fullname}
 					</h1>
-					<a className="twitter-timeline" data-height='400' data-width='300' 
-						href={"https://twitter.com/"+partyInfo[key].twitter}>Tweets</a> 
+					<p>
+						Leader: {partyInfo.leader}
+					</p>
+					<p>
+						Current MPs: {partyInfo.currentmp}
+					</p>
+					<p>
+						<a href={partyInfo.website}>
+							Website
+						</a>
+					</p>
+					<TwitterWidget twitter={partyInfo.twitter} />
 				</div>
-				)})}
 			</div>
 		);
 	}
 
 	componentDidMount(){
 		twttr.widgets.load();
+	}
+}
+
+class TwitterWidget extends React.Component {
+	render(){
+		if(this.props.twitter != undefined){
+			return ( 
+				<a className="twitter-timeline" data-height='400' data-width='300' 
+					href={"https://twitter.com/"+this.props.twitter}>
+					Tweets
+				</a> 
+			);
+		} else {
+			return null;
+		}
 	}
 }
 

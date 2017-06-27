@@ -29,7 +29,7 @@ class Home extends React.Component {
 					</a>
 				</p>
 			</div>
-			);
+		);
 	}
 }
 
