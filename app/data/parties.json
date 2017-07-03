@@ -1,0 +1,158 @@
+{
+	"national":
+	{
+		"key":"national",
+		"name": "National", 
+		"fullname": "New Zealand National Party", 
+		"image": "national.jpg",
+		"twitter":"nznationalparty",
+		"currentmp": 58,
+		"website": "https://www.national.org.nz",
+		"colour1": "blue",
+		"colour2": "blue",
+		"leader" : "Bill English"
+	},
+	"labour":
+	{
+		"key":"labour", 
+		"name": "Labour", 
+		"fullname": "New Zealand Labour Party", 
+		"image":"labour.jpg",
+		"website":"http://www.labour.org.nz/",
+		"leader":"Andrew Little",
+		"twitter":"nzlabour",
+		"colour1": "red",
+		"colour2": "red",
+		"currentmp": 31
+	},
+	"greens":
+	{
+		"key":"greens", 
+		"name": "Greens", 
+		"fullname": "Green Party of Aotearoa New Zealand", 
+		"image":"greens.jpg",
+		"twitter":"nzgreens",
+		"leader":"Metiria Turei/James Shaw", 
+		"website":"https://www.greens.org.nz",
+		"colour1": "green",
+		"colour2": "green",
+		"currentmp": 14
+	},
+	"nzfirst":
+	{
+		"key":"nzfirst", 
+		"name": "NZ First", 
+		"fullname": "New Zealand First", 
+		"image":"nzfirst.jpg",
+		"leader":"Winston Peters",
+		"twitter":"nz_first",
+		"website":"http://www.nzfirst.org.nz",
+		"colour1": "black",
+		"colour2": "black",
+		"currentmp": 12
+	},
+	"opportunity":
+	{
+		"key":"top", 
+		"name": "Opportunity", 
+		"fullname": "Opportunities Party", 
+		"image":"top.jpg",
+		"leader":"Gareth Morgan",
+		"twitter":"top_nz",
+		"website":"http://top.org.nz",
+		"colour1": "blue",
+		"colour2": "red",
+		"currentmp": 0
+	},
+	"internet":
+	{
+		"key":"internet", 
+		"name": "Internet", 
+		"fullname": "Internet Party", 
+		"image":"internet.jpg",
+		"leader":"Suzie Dawson",
+		"twitter":"internetpartynz",
+		"website": "https://internet.org.nz",
+		"colour1": "purple",
+		"colour2": "purple",
+		"currentmp": 0
+	},
+	"act":
+	{
+		"key":"act", 
+		"name": "ACT", 
+		"fullname": "ACT New Zealand", 
+		"image":"act.jpg",
+		"leader":"David Seymour",
+		"twitter":"actparty",
+		"website":"http://www.act.co.nz",
+		"colour1": "yellow",
+		"colour2": "yellow",
+		"currentmp": 1
+	},
+	"cannabis":
+	{
+		"key":"cannabis", 
+		"name": "Cannabis", 
+		"fullname": "Aotearoa Legalise Cannabis Party", 
+		"image":"cannabis.jpg",
+		"leader":"Jeff Lye",
+		"twitter":"cannabisparty",
+		"website":"http://cannabis.org.nz",
+		"colour1": "green",
+		"colour2": "black",
+		"currentmp": 0
+	},
+	"mana":
+	{
+		"key":"mana", 
+		"name": "Mana", 
+		"fullname": "MANA Movement", 
+		"image":"mana.jpg",
+		"leader":"Hone Harawira",
+		"twitter":"manaparty",
+		"website":"http://mana.org.nz",
+		"colour1": "red",
+		"colour2": "black",
+		"currentmp": 0
+	},
+	"maori":
+	{
+		"key":"maori", 
+		"name": "Maori", 
+		"fullname": "Maori Party", 
+		"image":"maori.jpg",
+		"leader":"Marama Fox/Te Ururoa Flavell",
+		"twitter":"manaparty",
+		"website":"http://maoriparty.org.nz/",
+		"colour1": "orange",
+		"colour2": "orange",
+		"currentmp": 2
+	},
+	"united":
+	{
+		"key":"united", 
+		"name": "United Future", 
+		"fullname": "United Future New Zealand", 
+		"image":"united.jpg",
+		"leader":"Peter Dunne", 
+		"twitter":"unitednz",
+		"website":"http://unitedfuture.org.nz/",
+		"colour1": "green",
+		"colour2": "purple",
+		"currentmp": 1
+	},
+	"conservative":
+	{
+		"key":"conservative",
+		"name":"Conservative",
+		"fullname":"Conservative Party of New Zealand",
+		"image":"conservative.jpg",
+		"leader":"Leighton Baker",
+		"website":"http://www.conservativeparty.org.nz/",
+		"colour1": "blue",
+		"colour2": "blue",
+		"currentmp": 0
+	}
+
+}
