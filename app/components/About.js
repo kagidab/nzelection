@@ -5,10 +5,7 @@ var About = React.createClass({
 		return (
 			<div>
 				<p>
-					I WANT TO BURN EVERYTHING BUT WILL SETTLE FOR SOME NICE GRAPHS
-				</p>
-				<p>
-m ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra velit a neque consectetur, sed egestas ipsum commodo. Duis ac nibh malesuada, varius nunc tristique, sodales arcu. Nullam rhoncus purus sit amet lacus porttitor venenatis. Morbi euismod pharetra ipsum vel blandit. Nunc vestibulum ante in orci maximus dignissim et nec erat. Phasellus at lobortis augue. Nam convallis venenatis dapibus. Mauris arcu nulla, dictum non tincidunt ut, sodales volutpat nisl. Pellentesque lacinia nibh vitae magna mattis, et consectetur tellus congue. Aliquam id sagittis erat. Nam quis nunc ac odio consectetur malesuada. Nullam ac bibendum arcu. Mauris eleifend nibh sed gravida faucibus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra velit a neque consectetur, sed egestas ipsum commodo. Duis ac nibh malesuada, varius nunc tristique, sodales arcu. Nullam rhoncus purus sit amet lacus porttitor venenatis. Morbi euismod pharetra ipsum vel blandit. Nunc vestibulum ante in orci maximus dignissim et nec erat. Phasellus at lobortis augue. Nam convallis venenatis dapibus. Mauris arcu nulla, dictum non tincidunt ut, sodales volutpat nisl. Pellentesque lacinia nibh vitae magna mattis, et consectetur tellus congue. Aliquam id sagittis erat. Nam quis nunc ac odio consectetur malesuada. Nullam ac bibendum arcu. Mauris eleifend nibh sed gravida faucibus.
 
 Integer feugiat elit quis arcu maximus aliquet id in elit. Nam sit amet dolor volutpat, faucibus lacus sed, dictum lacus. Nullam mattis dapibus ex id commodo. Nunc imperdiet tristique felis nec semper. Praesent id tellus tortor. Vestibulum non tortor at leo tincidunt faucibus. Nam et fermentum magna. Morbi quis metus nec ante dapibus tristique. Sed congue posuere massa, vitae fringilla diam convallis eget. Aenean a enim metus. Donec dapibus non tortor vehicula finibus. Cras a eleifend massa. Aenean imperdiet iaculis velit, nec rutrum nisl rutrum ut. Fusce ultricies dictum mi sed cursus. Aliquam eu nisi ante.
 
