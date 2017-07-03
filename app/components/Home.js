@@ -8,9 +8,8 @@ class Home extends React.Component {
 	componentWillMount(){
 		const electionDay = new Date(2017, 8, 23);
 		var now = new Date;
-		this.state = {
-			days : D3Time.timeDay.count(now, electionDay)
-		}
+		var daysUntilElection = D3Time.timeDay.count(now, electionDay);
+		this.setState( {daysUntilElection : D3Time.timeDay.count(now, electionDay)} );
 	}
 
 	render(){
@@ -18,10 +17,7 @@ class Home extends React.Component {
 		return (
 			<div>
 				<p>
-					{this.state.days} days until election
-				</p>
-				<p>
-					News or something?
+					{this.state.daysUntilElection} days until election
 				</p>
 				<p>
 					<a href={electionUrl}>
