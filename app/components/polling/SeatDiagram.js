@@ -33,12 +33,11 @@ class SeatDiagram extends React.Component{
 
 	render() {
 		const seats = this.props.seats;
-		console.log(seats);
 		const totalSeats = Object.keys(seats).reduce(function(prev, key){ return prev + seats[key] }, 0)
 
 		return (
 			<div>
-				<h2> Seats </h2>
+				<h2 style={{textAlign:'center'}}> Seats </h2>
 			{Object.keys(seats).map((partyKey) => 
 				[...Array(seats[partyKey])].map((x, i) => (
 					<PartySquare key={i} ident={partyKey + i} colour1={this.state.parties[partyKey].colour1} 
@@ -48,9 +47,9 @@ class SeatDiagram extends React.Component{
 				))
 			)}
 
-			<p>
+			<h4>
 				Total seats: {totalSeats}
-			</p>
+			</h4>
 			<Coalition seats={this.props.seats} totalSeats={totalSeats} parties={this.state.parties} />
 		</div>
 		)
@@ -76,7 +75,6 @@ class Coalition extends React.Component {
 		var coalition = this.selectedCoalition();
 		if(coalition.length == 0){ //when no parties are selected, default to biggest party
 			//this section feels a little awkward, presumably inefficient (but small arrays, so w/e)
-			console.log(this.props);
 			const pollingNumbers = Object.keys(this.props.seats).map(partyKey => this.props.seats[partyKey]);
 			const max = Math.max(...pollingNumbers);
 			const maxParty = Object.keys(this.props.seats).filter( partyKey => this.props.seats[partyKey] == max );
@@ -89,13 +87,13 @@ class Coalition extends React.Component {
 	render(){
 		return (
 			<div>
-			<p>
-				Seats in coalition (click squares to toggle): {this.seatsInCoalition()}
-			</p>
-			<p>
-				{this.coalitionFormed(this.props.totalSeats)} with {this.coalitionString()}
-			</p>
-		</div>
+				<h4>
+					Seats in coalition (click squares to toggle): {this.seatsInCoalition()}
+				</h4>
+				<h4>
+					{this.coalitionFormed(this.props.totalSeats)} with {this.coalitionString()}
+				</h4>
+			</div>
 		);
 	}
 }
@@ -105,8 +103,8 @@ class PartySquare extends React.Component {
 	render(){
 		return(
 			<div style={{display:'inline-block', padding:'0', margin:'1px'}} 
-				title={this.props.name + ": " + this.props.seats} onMouseDown={this.props.toggleCallback}>
-				<svg style={{width:'25px', height:'25px', border:'2px solid', borderColor: this.props.borderColour, padding:0,margin:0}}>
+				title={this.props.name + ": " + this.props.seats} onMouseDown={this.props.toggleCallback} onTouchStart={this.props.toggleCallback}>
+				<svg style={{width:'25px', height:'25px', border:'2px solid', borderColor: this.props.borderColour, padding:0, margin:0}}>
 					<defs>
 						<linearGradient id={"grad" + this.props.ident} x1="0%" y1="0%" x2="100%" y2="0%">
 							<stop offset="0%"   style={{stopColor:this.props.colour1, stopOpacity:1}} />

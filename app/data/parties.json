@@ -10,7 +10,28 @@
 		"website": "https://www.national.org.nz",
 		"colour1": "blue",
 		"colour2": "blue",
-		"leader" : "Bill English"
+		"leader" : "Bill English",
+		"policies":
+		{
+			"Housing":[
+				"Creating special housing areas in high demand areas across New Zealand to fast-track the building of homes.",
+				"A $1 billion Housing Infrastructure Fund to accelerate new housing in the high-demand areas where it’s needed most. The new fund will focus squarely on financing infrastructure like roads and water needed to support new housing.",
+				"Setting up independent Urban Development Authorities to speed up housing development in high-demand areas - they’ve proved successful in many other countries.",
+				"Reforming the Resource Management Act to make it easier for councils and developers to get houses consented and built.",
+				"Tightened rules to ensure people buying and selling property for profit pay their fair share of tax.",
+				"Requiring Councils to ensure land supply for housing keeps pace with growth.",
+				"Passed legislation to restrict Council development charges to reduce the cost of building."
+			],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"labour":
 	{
@@ -23,7 +44,20 @@
 		"twitter":"nzlabour",
 		"colour1": "red",
 		"colour2": "red",
-		"currentmp": 31
+		"currentmp": 31,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"greens":
 	{
@@ -36,7 +70,20 @@
 		"website":"https://www.greens.org.nz",
 		"colour1": "green",
 		"colour2": "green",
-		"currentmp": 14
+		"currentmp": 14,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"nzfirst":
 	{
@@ -49,7 +96,20 @@
 		"website":"http://www.nzfirst.org.nz",
 		"colour1": "black",
 		"colour2": "black",
-		"currentmp": 12
+		"currentmp": 12,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"opportunity":
 	{
@@ -62,7 +122,20 @@
 		"website":"http://top.org.nz",
 		"colour1": "blue",
 		"colour2": "red",
-		"currentmp": 0
+		"currentmp": 0,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"internet":
 	{
@@ -75,7 +148,20 @@
 		"website": "https://internet.org.nz",
 		"colour1": "purple",
 		"colour2": "purple",
-		"currentmp": 0
+		"currentmp": 0,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"act":
 	{
@@ -88,7 +174,20 @@
 		"website":"http://www.act.co.nz",
 		"colour1": "yellow",
 		"colour2": "yellow",
-		"currentmp": 1
+		"currentmp": 1,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"cannabis":
 	{
@@ -101,7 +200,20 @@
 		"website":"http://cannabis.org.nz",
 		"colour1": "green",
 		"colour2": "black",
-		"currentmp": 0
+		"currentmp": 0,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"mana":
 	{
@@ -114,7 +226,20 @@
 		"website":"http://mana.org.nz",
 		"colour1": "red",
 		"colour2": "black",
-		"currentmp": 0
+		"currentmp": 0,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"maori":
 	{
@@ -127,7 +252,20 @@
 		"website":"http://maoriparty.org.nz/",
 		"colour1": "orange",
 		"colour2": "orange",
-		"currentmp": 2
+		"currentmp": 2,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"united":
 	{
@@ -140,7 +278,20 @@
 		"website":"http://unitedfuture.org.nz/",
 		"colour1": "green",
 		"colour2": "purple",
-		"currentmp": 1
+		"currentmp": 1,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	},
 	"conservative":
 	{
@@ -152,7 +303,20 @@
 		"website":"http://www.conservativeparty.org.nz/",
 		"colour1": "blue",
 		"colour2": "blue",
-		"currentmp": 0
+		"currentmp": 0,
+		"policies":
+		{
+			"Housing":["Filler policy"],
+			"Budget":["Filler policy"],
+			"Business":["Filler policy"],
+			"Immigration":["Filler policy"],
+			"Social":["Filler policy"],
+			"Crime":["Filler policy"],
+			"Drugs":["Filler policy"],
+			"University":["Filler policy"],
+			"Super":["Filler policy"],
+			"Welfare":["Filler policy"]
+		}
 	}
 
 }

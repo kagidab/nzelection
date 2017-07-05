@@ -15,15 +15,15 @@ class Home extends React.Component {
 	render(){
 		const electionUrl = "http://www.elections.org.nz/voters/enrol-check-or-update-now";
 		return (
-			<div>
-				<p>
-					{this.state.daysUntilElection} days until election
-				</p>
-				<p>
-					<a href={electionUrl}>
-						<button className="btn btn-lg btn-success"> Enroll to vote </button>
-					</a>
-				</p>
+			<div className='col-sm-8 col-sm-offset-2' style={{textAlign:'center', background:'white'}}>
+					<p>
+						{this.state.daysUntilElection} days until election
+					</p>
+					<p>
+						<a href={electionUrl}>
+							<button className="btn btn-lg btn-success"> Enroll to vote </button>
+						</a>
+					</p>
 			</div>
 		);
 	}

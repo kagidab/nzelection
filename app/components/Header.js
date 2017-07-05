@@ -14,14 +14,16 @@ class Header extends React.Component{
 
 	render() {
 		return (
-			<div>
-				<Link to='/' style={{textDecoration:'none', color:'black'}}> 
-					<h1 className="text-center">Election 2017</h1>
-				</Link>
-				<NavbarInstance page={this.props.page}/>
+			<div className='col-sm-8 col-sm-offset-2'> 
+				<div>
+					<Link to='/' style={{textDecoration:'none', color:'black'}}> 
+						<h1 className="text-center">Election 2017</h1>
+					</Link>
+					<NavbarInstance page={this.props.page}/>
+				</div>
 			</div>
-			)
-}
+		)
+	}
 }
 
 module.exports = Header;

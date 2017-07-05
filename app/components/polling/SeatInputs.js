@@ -1,6 +1,5 @@
 var React = require('react');
 var ReactBootstrap = require('react-bootstrap');
-var partyFile = require('../data/parties.json');
 
 var FormControl = ReactBootstrap.FormControl;
 var FormGroup = ReactBootstrap.FormGroup;
@@ -11,9 +10,7 @@ class SeatInputs extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = {
-			seats : this.props.polling
-		}
+		this.state = { seats : this.props.polling }
 	}
 
 	changeSeats(event, partyKey){
@@ -33,31 +30,38 @@ class SeatInputs extends React.Component {
 		if(event.charCode < '0'.charCodeAt(0) || event.charCode > '9'.charCodeAt(0)) event.preventDefault(); 
 	}
 
+
 	render(){
-		var parties = partyFile;
+		var parties = this.props.parties;
 		return (
 			<div>
-				<h2> Projected Seat Allocation</h2>
-				<form>
-					{Object.keys(this.state.seats).map(function(partyKey, index){
-						var partyInfo = parties[partyKey];
-						return( 
-							<FormGroup key={partyKey} >
-								<ControlLabel> {partyInfo.fullname} </ControlLabel>
-							<FormControl type="number" id={"seats" + partyKey} defaultValue={this.state.seats[partyKey]} min="0" step="1" 
-								max={this.props.maxSeats} onKeyPress={this.checkNumber} style={{width:'70px'}} 
-								onChange={(e) => this.changeSeats(e, partyKey)}/>
-						</FormGroup>
-						)}, this)
-					}
-				</form>
-				<p>
+				<div>
+					<h2 style={{textAlign: 'center'}}> Seat Allocation</h2>
+					<form>
+						{Object.keys(this.state.seats).map(function(partyKey, index){
+							var partyInfo = parties[partyKey];
+							return( 
+								<FormGroup key={partyKey} className="col-sm-12">
+									<div className="col-sm-8">
+										<ControlLabel> {partyInfo.name} </ControlLabel>
+									</div>
+									<div className="col-sm-4">
+										<FormControl type="number" id={"seats" + partyKey} defaultValue={this.state.seats[partyKey]} min="0" step="1" 
+											max={this.props.maxSeats} onKeyPress={this.checkNumber} style={{width:'70px', display:'inline-block'}} 
+											onChange={(e) => this.changeSeats(e, partyKey)}/>
+									</div>
+								</FormGroup>
+							)}, this)
+						}
+					</form>
+				</div>
+				<h5 style={{textAlign:'justify'}}>
 					Default values are taken from recent polling data
 					(Newshub Reid Research 15/6/17),
 					with assumption Maori, ACT and United Future each win an electorate.
 					Calculate seat numbers for different result
 					<a href="http://www.elections.org.nz/voting-system/mmp-voting-system/mmp-seat-allocation-calculator"> here</a>.
-				</p>
+				</h5>
 			</div>
 		);
 	}

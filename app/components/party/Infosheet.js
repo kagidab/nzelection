@@ -1,18 +1,18 @@
 var React = require('react');
-var partyFile = require('../data/parties.json');
 var Link = require('react-router-dom').Link;
+var parties = require('../../data/parties.json');
 
 class Infosheet extends React.Component {
 
 	render(){
 		var partyName = this.props.match.params.partyName;
-		var partyInfo = partyFile[partyName];
+		var partyInfo = parties[partyName];
 		return (
-			<div>
-				<div>
-					<h1>
+			<div className="col-sm-8 col-sm-offset-2" style={{background:'white'}}>
+				<div className="col-sm-7">
+					<h2>
 						{partyInfo.fullname}
-					</h1>
+					</h2>
 					<p>
 						Leader: {partyInfo.leader}
 					</p>
@@ -24,6 +24,8 @@ class Infosheet extends React.Component {
 							Website
 						</a>
 					</p>
+				</div>
+				<div className="col-sm-4 col-sm-offset-1" >
 					<TwitterWidget twitter={partyInfo.twitter} />
 				</div>
 			</div>
@@ -39,7 +41,7 @@ class TwitterWidget extends React.Component {
 	render(){
 		if(this.props.twitter != undefined){
 			return ( 
-				<a className="twitter-timeline" data-height='400' data-width='300' 
+				<a className="twitter-timeline" data-height='400' 
 					href={"https://twitter.com/"+this.props.twitter}>
 					Tweets
 				</a> 

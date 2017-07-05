@@ -8,21 +8,23 @@ class NavbarInstance extends React.Component{
 
 	render() {
 		return (
-			<Nav bsStyle='tabs' justified>
-				<LinkContainer to="/party">
-					<NavItem>Parties</NavItem>
-				</LinkContainer>
-				<LinkContainer to="/poll">
-					<NavItem>Polling</NavItem>
-				</LinkContainer>
-				<LinkContainer to="/policy">
-					<NavItem>Policy</NavItem>
-				</LinkContainer>
-				<LinkContainer to="/about">
-					<NavItem>About</NavItem>
-				</LinkContainer>
-			</Nav>
-			)}
+			<div>
+				<Nav style={{border: '5px !important'}} bsStyle='tabs' justified>
+					<LinkContainer to="/party">
+						<NavItem>Parties</NavItem>
+					</LinkContainer>
+					<LinkContainer to="/poll">
+						<NavItem>Polling</NavItem>
+					</LinkContainer>
+					<LinkContainer to="/policy">
+						<NavItem>Policy</NavItem>
+					</LinkContainer>
+					<LinkContainer to="/about">
+						<NavItem>About</NavItem>
+					</LinkContainer>
+				</Nav>
+			</div>
+		)}
 };
 
 module.exports = NavbarInstance;
